@@ -34,17 +34,19 @@ CREATE TABLE `songs` (
   `location` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `age` int(10) NOT NULL,
-  `favsong` varchar(100) NOT NULL
+  `favsong` varchar(100) NOT NULL,
+  `link` varchar(100) NOT NULL,
+  `photo` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `songs`
 --
 
-INSERT INTO `songs` (`user_id`, `first_name`, `last_name`, `genre`, `location`, `email`, `age`, `favsong`) VALUES
-(15, 'tesdfg', 'dghf', 'dgfh', 'dfghg', 'gfs@test.com', 34, 'dfghg'),
-(16, 'gf', 'f', 'f', 'f', 'jess@test.com', 45, 'gedf'),
-(17, 'tedgs', 'dg', 'cxg', 'dgf', 'jess@test.com', 34, 'redsgz');
+INSERT INTO `songs` (`user_id`, `first_name`, `last_name`, `genre`, `location`, `email`, `age`, `favsong`,`link`,`photo`) VALUES
+(15, 'tesdfg', 'dghf', 'dgfh', 'dfghg', 'gfs@test.com', 34, 'dfghg', 'youtube.com', '123.jpg'),
+(16, 'gf', 'f', 'f', 'f', 'jess@test.com', 45, 'gedf', 'youtube.com', 'jess.jpg'),
+(17, 'tedgs', 'dg', 'cxg', 'dgf', 'jess@test.com', 34, 'redsgz', 'youtube.com', 'retha.jpg');
 
 --
 -- Indexes for dumped tables
